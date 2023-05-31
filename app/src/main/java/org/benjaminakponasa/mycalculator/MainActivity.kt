@@ -23,4 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         tvInput?.append((view as Button).text)
     }
+
+    fun onClear(view: View) {
+        tvInput?.text = ""
+    }
 }
