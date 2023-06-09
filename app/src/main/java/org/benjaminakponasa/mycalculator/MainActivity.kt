@@ -10,6 +10,8 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
 
     private var tvInput: TextView? = null
+    var lastNumeric: Boolean = false
+    var lastDot: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
