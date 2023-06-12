@@ -29,4 +29,12 @@ class MainActivity : AppCompatActivity() {
     fun onClear(view: View) {
         tvInput?.text = ""
     }
+
+    fun onDecimalPoint(view: View) {
+        if (lastNumeric && !lastDot) {
+            tvInput?.append(".")
+            lastNumeric = false
+            lastDot = true
+        }
+    }
 }
