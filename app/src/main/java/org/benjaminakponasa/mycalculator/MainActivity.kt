@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 //        Toast.makeText(this, "Button Clicked", Toast.LENGTH_LONG).show()
 
         tvInput?.append((view as Button).text)
+        lastNumeric = true
+        lastDot = false
     }
 
     fun onClear(view: View) {
